@@ -21,7 +21,7 @@ def mostrar_ventas():
                 else:
                     try:
                         cursor.execute(
-                            "INSERT INTO Ventas_Producto (Producto, Cantidad, Total) VALUES (%s, %s, %s)",
+                            "INSERT INTO Ventas (Producto, Cantidad, Total) VALUES (%s, %s, %s)",
                             (producto, cantidad, total)
                         )
                         con.commit()
@@ -45,7 +45,7 @@ def mostrar_ventas():
     try:
         con = obtener_conexion()
         cursor = con.cursor()
-        cursor.execute("SELECT Id_Venta, Producto, Cantidad, Total FROM Ventas_Producto")
+        cursor.execute("SELECT Id_Venta, Producto, Cantidad, Total FROM Ventas")
         ventas = cursor.fetchall()
 
         if ventas:
