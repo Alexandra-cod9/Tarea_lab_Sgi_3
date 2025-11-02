@@ -45,7 +45,7 @@ def mostrar_ventas():
     try:
         con = obtener_conexion()
         cursor = con.cursor()
-        cursor.execute("SELECT Id_Venta, Producto, Cantidad, Total FROM Ventas")
+        cursor.execute("SELECT Id_Venta, Producto, Cantidad, total FROM Ventas")
         ventas = cursor.fetchall()
 
         if ventas:
