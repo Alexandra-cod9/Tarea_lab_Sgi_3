@@ -21,7 +21,7 @@ def mostrar_ventas():
                 else:
                     try:
                         cursor.execute(
-                            "INSERT INTO Ventas (Producto, Cantidad, Total) VALUES (%s, %s, %s)",
+                            "INSERT INTO Ventas (Producto, Cantidad, total) VALUES (%s, %s, %s)",
                             (producto, cantidad, total)
                         )
                         con.commit()
