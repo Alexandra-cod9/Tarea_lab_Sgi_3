@@ -1,6 +1,6 @@
 import streamlit as st
 from modulos.login import login
-from modulos.ventas import mostrar_venta      # tu venta simple original
+from modulos.ventas import mostrar_ventas      # tu venta simple original
 from modulos.productos import mostrar_productos
 from modulos.ventas import mostrar_ventas    # ventas con total y tabla nueva
 
