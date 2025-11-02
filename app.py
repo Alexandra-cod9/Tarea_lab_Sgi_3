@@ -16,7 +16,7 @@ if st.session_state["sesion_iniciada"]:
 
     # Mostrar módulo correspondiente
     if seleccion == "Ventas simples":
-        mostrar_venta()
+        mostrar_ventas()
     elif seleccion == "Productos":
         mostrar_productos()
     elif seleccion == "Ventas con total":
