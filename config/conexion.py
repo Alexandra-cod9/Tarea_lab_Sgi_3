@@ -8,7 +8,7 @@ def obtener_conexion():
             user='Tup0crtddmf4aoous',
             password='mkHalSz2YPOtR8jya8DS',
             database='bgdcfmb1arijnmihxnub',
-            port=3307
+            port=3306
         )
         if conexion.is_connected():
             return conexion
